@@ -2363,6 +2363,39 @@ html, body { max-width: 100%; overflow-x: hidden; }
   .condition-item:hover { transform: none !important; }
 }
 
+
+/* ── CRITICAL HERO STATS FIX ── */
+@media (max-width: 768px) {
+  .hero-stats {
+    position: static !important;
+    left: auto !important;
+    bottom: auto !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    width: 100% !important;
+    margin-top: 1.8rem !important;
+    padding-top: 1.2rem !important;
+    border-top: 1px solid rgba(201,168,76,0.15) !important;
+    gap: 0 !important;
+  }
+  .stat-item {
+    text-align: center !important;
+    padding: 0 0.25rem !important;
+  }
+  .stat-num {
+    font-size: 1.4rem !important;
+    display: block !important;
+    line-height: 1.2 !important;
+  }
+  .stat-label {
+    font-size: 0.55rem !important;
+    display: block !important;
+    line-height: 1.4 !important;
+    color: #D8D5CF !important;
+    margin-top: 2px !important;
+  }
+}
+
 </style>
 </head>
 <body>
